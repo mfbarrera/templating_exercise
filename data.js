@@ -3,7 +3,6 @@ const pageData = {
     {
       component: "temp_gallery",
       title: "gallery",
-      theme: "dark",
       heading: "this is a gallery component built with templated strings",
       images: [
         {
@@ -24,6 +23,7 @@ const pageData = {
       component: "textImageBlock",
       title: "carrousel",
       text: "this is a test content",
+      classes: "text_image_block--inverted",
       image: {
         src: './assets/cat.jpg',
         alt: 'cat'
