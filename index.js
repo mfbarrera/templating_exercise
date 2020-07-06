@@ -10,9 +10,9 @@ import { pageData} from "./data.js";
  * each component name is mapped to its template.
  */
 const components = {
-  "temp_gallery": templatedGalleryComp,
-  "node_gallery": nodeGalleryComp,
-  "default": defaultComp
+  // "temp_gallery": templatedGalleryComp,
+  // "node_gallery": nodeGalleryComp,
+  // "default": defaultComp
 }
 
 /**
@@ -35,10 +35,11 @@ const pageInit = (pageData) => {
       if (components[section.component]) {
         pageWrapper.appendChild(components[section.component](section));
         console.log(section.component, ' loaded!');
-      } else {
-        pageWrapper.appendChild(components["default"](section));
-        console.log(section.name, ' not found, loading default component!');
       }
+      // else {
+      //   pageWrapper.appendChild(components["default"](section));
+      //   console.log(section.name, ' not found, loading default component!');
+      // }
     });
   } else {
     console.log('NO PAGE WRAPPER FOUND, PAGE CANT BE RENDERED');

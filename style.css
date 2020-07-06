@@ -11,6 +11,11 @@ section {
   padding: 0 20px;
 }
 
+#microPage {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .default {
   padding: 50px;
   color: red;
