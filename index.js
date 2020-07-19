@@ -2,17 +2,21 @@
 import { nodeGalleryComp, templatedGalleryComp } from "./components/gallery.js";
 import { defaultComp } from "./components/default.js";
 import { nodeImageComp, templatedImageComp } from "./components/image.js"; // not used outside other components
-
+import { imageComp } from "./components/imageComp.js";
+import { studentCustomComponent } from "./components/myuser.js";
 import { pageData} from "./data.js";
+
 
 /**
  * Component map
  * each component name is mapped to its template.
  */
 const components = {
-  // "temp_gallery": templatedGalleryComp,
-  // "node_gallery": nodeGalleryComp,
-  // "default": defaultComp
+  "temp_gallery": templatedGalleryComp,
+  "textImageBlock":imageComp,
+  "node_gallery": nodeGalleryComp,
+  "default": defaultComp,
+  "myuser": studentCustomComponent,
 }
 
 /**
@@ -36,10 +40,10 @@ const pageInit = (pageData) => {
         pageWrapper.appendChild(components[section.component](section));
         console.log(section.component, ' loaded!');
       }
-      // else {
-      //   pageWrapper.appendChild(components["default"](section));
-      //   console.log(section.name, ' not found, loading default component!');
-      // }
+      else {
+        pageWrapper.appendChild(components["default"](section));
+        console.log(section.name, ' not found, loading default component!');
+      }
     });
   } else {
     console.log('NO PAGE WRAPPER FOUND, PAGE CANT BE RENDERED');

@@ -60,13 +60,33 @@ const pageData = {
       }
     },
     {
-      component: "studentCustomComponent",
-      contents: "this is a student made test component"
+      component: "myuser",
+      displayName: "Fernando Barrera Ramirez",
+      userName: "@punkdesign",
+      image: {
+        src: './assets/Fer.jpg',
+        alt: 'fernando'
+      },
+      role: "developer",
+      socialMedia: [
+        {
+          name: "Github",
+          icon: "",
+          link: "https://github.com/mfbarrera"
+        },
+        {
+          name: "Twitter",
+          icon: "",
+          link: "https://www.twiter.com/PUNK_design/"
+        },
+        {
+          name: "Instagram",
+          icon: "",
+          link: "https://www.instagram.com/PUNK_design/"
+        }
+      ],
     },
-  ],
-  listeners: [
-    //
-  ]
+  ]  
 }
 
 export { pageData };

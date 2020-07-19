@@ -68,4 +68,5 @@ const templatedGalleryComp = (data) => {
   return section;
 }
 
+
 export { nodeGalleryComp, templatedGalleryComp }
