@@ -72,17 +72,17 @@ const pageData = {
         {
           name: "Github",
           icon: "",
-          link: "https://github.com/mfbarrera"
+          linkG: "https://github.com/mfbarrera"
         },
         {
           name: "Twitter",
           icon: "",
-          link: "https://www.twiter.com/PUNK_design/"
+          linkT: "https://www.twiter.com/PUNK_design/"
         },
         {
           name: "Instagram",
           icon: "",
-          link: "https://www.instagram.com/PUNK_design/"
+          linkI: "https://www.instagram.com/PUNK_design/"
         }
       ],
     },
